@@ -48,8 +48,8 @@ function parse_expression(ps::ParseState)
         #     ps.errored = true
         #     ret = mErrorToken(MissingCloser)
         # else
-            ps.errored = true
-            ret = mErrorToken(INSTANCE(next(ps)), UnexpectedToken)
+        ps.errored = true
+        ret = mErrorToken(INSTANCE(next(ps)), UnexpectedToken)
         # end
     else
         next(ps)
